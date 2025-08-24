@@ -1,6 +1,2 @@
 [phases.setup]
-cmds = [
-  "curl -fsSL https://nodejs.org/dist/v22.18.0/node-v22.18.0-linux-x64.tar.xz | tar -xJ",
-  "mv node-v22.18.0-linux-x64 /usr/local/node",
-  "export PATH=/usr/local/node/bin:$PATH"
-]
+nixPkgs = ["nodejs_22", "python3", "gcc", "gnumake"]
